@@ -20,11 +20,7 @@ function App() {
         </Link>
       </div>
       <Routes>
-        
-        <Route
-          path='/'
-          element={<HomePage/>}
-        />
+        <Route path='/' element={<>Home</>} />
         <Route
           path='/posts'
           element={
@@ -41,7 +37,6 @@ function App() {
             </AnimationWrap>
           }
         />
-     
       </Routes>
       <ToastContainer />
     </>
