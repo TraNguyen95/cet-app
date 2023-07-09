@@ -10,7 +10,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        orange: '#ee4d2d'
+        orange: '#ee4d2d',
+        mainBackground: '#191C22',
+        blue: '#36AAFA'
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/images/')",
+        'footer-texture': "url('/img/footer-texture.png')",
       }
     }
   },
