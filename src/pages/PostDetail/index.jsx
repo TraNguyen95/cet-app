@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import postApi from '../../apis/post.api'
 import './style.css'
 import convertDateFormat from '../../utils/convertDateTime'
+import { AnimationWrap } from '../../components/Animation'
 export default function PostsList() {
   const [post, setPost] = useState({})
   let { id } = useParams()
@@ -20,13 +21,15 @@ export default function PostsList() {
 
   return (
     <div className={mainBackgroundClasses}>
-      <div className='mx-auto max-w-[754px]'>
-        <h3 className='mb-10 text-left text-5xl text-white'>{post.title}</h3>
-        <div className='text-sm text-white text-opacity-50'>{convertDateFormat(post.createdAt)}</div>
-        <div className='description mt-10 text-white'>
-          <ReactMarkdown>{post.description}</ReactMarkdown>
+      <AnimationWrap>
+        <div className='mx-auto max-w-[754px]'>
+          <h3 className='mb-10 text-left text-5xl text-white'>{post.title}</h3>
+          <div className='text-sm text-white text-opacity-50'>{convertDateFormat(post.createdAt)}</div>
+          <div className='description mt-10 text-white'>
+            <ReactMarkdown>{post.description}</ReactMarkdown>
+          </div>
         </div>
-      </div>
+      </AnimationWrap>
     </div>
   )
 }
