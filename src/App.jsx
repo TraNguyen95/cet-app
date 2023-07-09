@@ -14,13 +14,13 @@ const AnimationWrap = ({ children }) => (
 function App() {
   return (
     <>
-      <div className='w-full bg-mainBackground py-4 pl-4'>
+      {/* <div className='w-full bg-mainBackground py-4 pl-4'>
         <Link to='/'>
           <img className='h-[40px] w-[40px] ' src='/images/Logo.png' alt='' />
         </Link>
-      </div>
+      </div> */}
       <Routes>
-        <Route path='/' element={<>Home</>} />
+        <Route path='/' element={<HomePage/>} />
         <Route
           path='/posts'
           element={

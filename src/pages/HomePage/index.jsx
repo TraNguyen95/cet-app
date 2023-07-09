@@ -14,7 +14,7 @@ export default function HomePage() {
       <div className='min-h-screen bg-darkGray-900'>
         <Header />
         <SideBar />
-        <div className='mainContainerHome flex h-full w-full justify-between pt-24 pt-6'>
+        <div className='mainContainerHome flex h-full w-full justify-between pt-24'>
           <div className='placeSideBar'></div>
           <div className='mainHomeContent'>
             <Home />

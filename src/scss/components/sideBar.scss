@@ -1,5 +1,6 @@
 .side-bar {
   width: 13.5%;
+  min-width: 194px;
   .section-items {
     left: 30px;
     .wrap-item-sideBar {
@@ -25,6 +26,7 @@
           color: #ffffff;
           text-transform: uppercase;
           opacity: 0.4;
+          font-size: 13px;
         }
 
         &.active {
