@@ -5,6 +5,7 @@ import useQueryConfig from 'src/hooks/useQueryConfig'
 import postApi from '../../apis/post.api'
 import useQueryParams from '../../hooks/useQueryParams'
 import classNames from 'classnames'
+import './index.css'
 
 export default function PostsList() {
   const [data, setData] = useState([])
@@ -51,8 +52,8 @@ export default function PostsList() {
   const handleSortCategory = (id) => {
     console.log('sort')
     setPage(1)
-    setData([])
     setSelectedCategory(id)
+    setData([])
     navigate({
       pathname: '/posts',
       search: createSearchParams([['category', id.toString()]]).toString()
@@ -108,15 +109,15 @@ export default function PostsList() {
             </button>
           ))}
         </div>
-        <div className='container mx-auto min-h-[500px]'>
+        <div className='container mx-auto min-h-[300px]'>
           <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3'>
             {data.map((post) => (
               <Link
                 to={post.id.toString()}
-                className='border-white-50 transform border-2 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105'
+                className='border-white-50 hover:scale-102 transform border-2 hover:-translate-y-1'
                 key={post.id}
               >
-                <div className='mb-2'>
+                <div layoutId={post.id.toString()} className='mb-2'>
                   <img className='h-72 w-full object-cover' src={post.thumbnail} alt='Thumbnail' />
                 </div>
                 <div className='mt-3 mb-2 text-blue'>アプリ開発</div>
@@ -130,7 +131,10 @@ export default function PostsList() {
           {!disabled && (
             <button
               onClick={handleLoadMore}
-              className='mx-auto transform rounded-[100px] border-r border-none bg-[#36AAFA] px-6 py-3 text-base transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105'
+              className={classNames(
+                'mx-auto transform rounded-[100px] border-r border-none bg-[#36AAFA] px-6 py-3 text-base hover:-translate-y-1 hover:scale-105',
+                { 'pointer-events-none': disabled }
+              )}
             >
               Load More
             </button>
