@@ -13,6 +13,8 @@ const AnimationWrap = ({ children }) => (
   </motion.div>
 )
 
+import Contact from './pages/Contact'
+
 function App() {
   return (
     <>
