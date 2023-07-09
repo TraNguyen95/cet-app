@@ -1,10 +1,8 @@
 import { ButtonHTMLAttributes } from 'react'
 import buttonGoDown from '../../assets/images/buttonGoDown.png'
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  isLoading?: boolean
-}
 
-export default function ButtonGoDown(props: ButtonProps) {
+
+export default function ButtonGoDown() {
   const style = {
     backgroundImage: `url(${buttonGoDown})`,
     backgroundSize: 'cover',

@@ -5,9 +5,8 @@ import '../../scss/components/sliderHome.scss'
 import { SliderComponent } from './SliderComponent'
 import ButtonGoDown from '../Button'
 
-type settings = Settings
 export function SliderHome() {
-  const settings: settings = {
+  const settings = {
     customPaging: function (i) {
       return <span className='w-full'>0{i + 1}</span>
     },

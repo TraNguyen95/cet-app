@@ -28,7 +28,7 @@ export const SliderComponent = () => {
           </div>
         </div>
         <div className='slider-image'>
-          <img src={portImage} alt='image' />
+          <img src={portImage} alt='port' />
         </div>
         <div className='slider-text-right flex h-full items-center'>
           <div className='flex flex-col'>

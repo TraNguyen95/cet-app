@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import PostsList from './pages/PostsList/Postlists'
 import PostDetail from './pages/PostDetail'
+import HomePage from './pages/HomePage'
 import { motion } from 'framer-motion'
 
 const AnimationWrap = ({ children }) => (
@@ -19,7 +20,10 @@ function App() {
         </Link>
       </div>
       <Routes>
-        <Route path='/' element={<>Home</>} />
+        <Route
+          path='/'
+          element={<HomePage/>}
+        />
         <Route
           path='/posts'
           element={
@@ -36,6 +40,7 @@ function App() {
             </AnimationWrap>
           }
         />
+     
       </Routes>
       <ToastContainer />
     </>

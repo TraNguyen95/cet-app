@@ -1,5 +1,5 @@
 import '../../scss/components/homeComponent.scss'
-import Banner from '../../assets/images/Banner.svg'
+import Banner from '../../assets/images/Banner.png'
 import ButtonGoDown from '../Button'
 
 export function Home() {
