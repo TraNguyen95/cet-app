@@ -1,3 +1,3 @@
-import Button from './Button'
+import ButtonGoDown from './ButtonGoDown'
 
-export default Button
+export default ButtonGoDown
