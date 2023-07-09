@@ -5,7 +5,19 @@ import useQueryConfig from 'src/hooks/useQueryConfig'
 import postApi from '../../apis/post.api'
 import useQueryParams from '../../hooks/useQueryParams'
 import classNames from 'classnames'
+import { motion } from 'framer-motion'
 import './index.css'
+
+const AnimationWrap = ({ children }) => (
+  <motion.div
+    className='border-white-50 hover:scale-102 transform border-2 hover:-translate-y-1'
+    style={{ x: 100 }}
+    animate={{ x: 0 }}
+    transition={{ duration: 2 }}
+  >
+    {children}
+  </motion.div>
+)
 
 export default function PostsList() {
   const [data, setData] = useState([])
@@ -112,18 +124,16 @@ export default function PostsList() {
         <div className='container mx-auto min-h-[300px]'>
           <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3'>
             {data.map((post) => (
-              <Link
-                to={post.id.toString()}
-                className='border-white-50 hover:scale-102 transform border-2 hover:-translate-y-1'
-                key={post.id}
-              >
-                <div layoutId={post.id.toString()} className='mb-2'>
-                  <img className='h-72 w-full object-cover' src={post.thumbnail} alt='Thumbnail' />
-                </div>
-                <div className='mt-3 mb-2 text-blue'>アプリ開発</div>
-                <h3 className='text-xl font-bold'>{post.attributes.title}</h3>
-                <div className='text-sm text-white text-opacity-50'>2023.01.23</div>
-              </Link>
+              <AnimationWrap>
+                <Link to={post.id.toString()} className='' key={post.id}>
+                  <div layoutId={post.id.toString()} className='mb-2'>
+                    <img className='h-72 w-full object-cover' src={post.thumbnail} alt='Thumbnail' />
+                  </div>
+                  <div className='mt-3 mb-2 text-blue'>アプリ開発</div>
+                  <h3 className='text-xl font-bold'>{post.attributes.title}</h3>
+                  <div className='text-sm text-white text-opacity-50'>2023.01.23</div>
+                </Link>
+              </AnimationWrap>
             ))}
           </div>
         </div>
