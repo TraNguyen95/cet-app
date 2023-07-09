@@ -16,7 +16,13 @@ module.exports = {
         },
         textBlueCustom: {
           900: "#36AAFA"
-        }
+        },
+        mainBackground: '#191C22',
+        blue: '#36AAFA'
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/images/')",
+        'footer-texture': "url('/img/footer-texture.png')",
       }
     }
   },
