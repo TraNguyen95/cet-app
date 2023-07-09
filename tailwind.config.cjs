@@ -11,6 +11,12 @@ module.exports = {
     extend: {
       colors: {
         orange: '#ee4d2d',
+        darkGray: {
+          900: "#191C22"
+        },
+        textBlueCustom: {
+          900: "#36AAFA"
+        },
         mainBackground: '#191C22',
         blue: '#36AAFA'
       },
