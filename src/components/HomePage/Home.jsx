@@ -11,9 +11,9 @@ export function Home() {
             <span>アプリ開発</span>
             <span>といえばCET</span>
           </div>
-          <img src={Banner} alt='' className='banner top-0  left-0 w-full object-cover' />
+          <img src={Banner} alt='' className='banner top-0  left-0 w-full object-cover'/>
           <div className='ButtonGoDown'>
-            <ButtonGoDown />
+            <ButtonGoDown/>
           </div>
         </div>
       </div>

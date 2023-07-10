@@ -1,4 +1,5 @@
 @import "../variables";
+
 .ourSkill {
   background-position: 66% 97%;
   background-repeat: no-repeat;
@@ -12,12 +13,15 @@
     width: 55%;
     padding-top: 20px;
     padding-right: 130px;
+
     .text-large {
       font-family: $font-family-bold;
       font-size: $font-size-large;
       line-height: $line-height-large;
       font-weight: 800;
+
     }
+
     .text-medium {
       font-weight: $font-weight-bold;
       text-transform: uppercase;
@@ -30,10 +34,17 @@
   .wrap-img {
     width: 45%;
   }
+
+  .button-custom {
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 9rem;
+  }
+
   .ButtonGoDown {
     right: 30px;
     bottom: 30px;
-    position: absolute;
-    z-index: 30;
   }
 }
