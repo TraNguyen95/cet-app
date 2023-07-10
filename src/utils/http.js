@@ -26,7 +26,7 @@ class Http {
         return response
       },
       function (error) {
-        toast.error('message')
+        toast.error(error?.response.data.error.message || 'Request failed with status code 400')
         return Promise.reject(error)
       }
     )
