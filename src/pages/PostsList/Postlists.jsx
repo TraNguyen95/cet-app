@@ -6,6 +6,7 @@ import postApi from '../../apis/post.api'
 import useQueryParams from '../../hooks/useQueryParams'
 import classNames from 'classnames'
 import { motion } from 'framer-motion'
+import LogoFixed from '../../components/LogoFixed'
 import './index.css'
 
 const AnimationWrap = ({ children }) => (
@@ -99,6 +100,7 @@ export default function PostsList() {
 
   return (
     <div className={mainBackgroundClasses}>
+      <LogoFixed />
       <div className='container text-white'>
         <h3 className='mb-10 text-center text-5xl'>Our News</h3>
         <div className='flex justify-center gap-10 pb-10 max-sm:justify-start' style={{ overflowX: 'auto' }}>

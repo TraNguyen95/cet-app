@@ -16,11 +16,6 @@ const AnimationWrap = ({ children }) => (
 function App() {
   return (
     <>
-      <div className='fixed w-full bg-mainBackground bg-transparent py-4 pl-4'>
-        <Link to='/'>
-          <img className='h-[40px] w-[40px]' src='/images/Logo.png' alt='' />
-        </Link>
-      </div>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route
