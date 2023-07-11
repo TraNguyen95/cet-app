@@ -8,6 +8,7 @@ import classNames from 'classnames'
 import { motion } from 'framer-motion'
 import LogoFixed from '../../components/LogoFixed'
 import './index.css'
+import Footer from '../../components/Footer'
 
 const AnimationWrap = ({ children }) => (
   <motion.div
@@ -85,7 +86,7 @@ export default function PostsList() {
   const handleLoadMore = () => {
     setPage((prevPage) => prevPage + 1)
   }
-  const mainBackgroundClasses = `bg-mainBackground bg-[url("/images/Vector14.png")] bg-contain bg-left-top bg-no-repeat py-6 min-h-screen`
+  const mainBackgroundClasses = `text-wite bg-mainBackground bg-[url("/images/Vector14.png")] bg-contain bg-left-top bg-no-repeat min-h-screen`
 
   const location = useLocation()
 
@@ -101,7 +102,7 @@ export default function PostsList() {
   return (
     <div className={mainBackgroundClasses}>
       <LogoFixed />
-      <div className='container text-white'>
+      <div className='max-w-[1600px] text-white mx-auto pt-[110px] px-[147px] max-lg:px-4'>
         <h3 className='mb-10 text-center text-5xl'>Our News</h3>
         <div className='flex justify-center gap-10 pb-10 max-sm:justify-start' style={{ overflowX: 'auto' }}>
           <button
@@ -123,7 +124,7 @@ export default function PostsList() {
             </button>
           ))}
         </div>
-        <div className='container mx-auto min-h-[300px]'>
+        <div className='mx-auto min-h-[300px]'>
           <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3'>
             {data.map((post) => (
               <motion.div
@@ -158,6 +159,7 @@ export default function PostsList() {
             </button>
           )}
         </div>
+        <Footer />
       </div>
     </div>
   )
