@@ -1,11 +1,11 @@
-import Slider, { Settings } from 'react-slick'
+import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import '../../scss/components/sliderHome.scss'
-import { SliderComponent } from './SliderComponent'
+import '../../scss/components/SliderPortfolio.scss'
+import {CardPortfolio} from './CardPortfolio.jsx'
 import ButtonGoDown from '../Button'
 
-export function SliderHome() {
+export function SliderPortfolio() {
   const settings = {
     customPaging: function (i) {
       return <span className='w-full'>0{i + 1}</span>
@@ -23,14 +23,14 @@ export function SliderHome() {
     <>
       <div className='slider-home relative'>
         <Slider {...settings}>
-          <SliderComponent />
-          <SliderComponent />
-          <SliderComponent />
-          <SliderComponent />
-          <SliderComponent />
+          <CardPortfolio/>
+          <CardPortfolio/>
+          <CardPortfolio/>
+          <CardPortfolio/>
+          <CardPortfolio/>
         </Slider>
         <div className='ButtonGoDown'>
-          <ButtonGoDown />
+          <ButtonGoDown/>
         </div>
       </div>
     </>

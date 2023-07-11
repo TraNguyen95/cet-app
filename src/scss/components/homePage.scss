@@ -8,39 +8,8 @@
   width: calc(100% - $width-sideBar);
 }
 
-.section-ten .overlay {
-  position: absolute;
-  width: 100%;
-}
-
-div.section-ten .slick-current + .slick-slide .overlay {
-  display: none !important;
-}
-
-.section-ten .person {
-  position: relative;
-}
-
-.section-ten .slick-slide-feedback span {
-  // display: none;
-  display: block;
-  height: 8px;
-  width: 8px;
-  opacity: 1;
-  color: orange;
-  background: orange;
-  border: 3px solid orange;
-  border-style: double;
-  background-clip: content-box;
-  cursor: pointer;
-  border-radius: 50%;
-}
-.section-ten .slick-slide-feedback{
-  gap: 10px;
-  display: flex !important;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 40px;
+.textLarge {
+  font-size: $font-size-large;
+  font-family: $font-family-bold;
+  line-height: $line-height-large
 }
