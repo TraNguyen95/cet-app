@@ -90,7 +90,9 @@ export default function HomePage() {
             <AnimationHome>
               <ClientFeedback/>
             </AnimationHome>
-            <Footer/>
+            <AnimationHome>
+              <Footer/>
+            </AnimationHome>
           </div>
         </div>
       </div>
