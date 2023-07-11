@@ -10,6 +10,8 @@ import '../../scss/components/homePage.scss'
 import { useEffect, useState } from 'react'
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import Footer from '../../components/Footer'
+import ClientFeedback from '../../components/HomePage/ClientFeedback'
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -73,6 +75,8 @@ export default function HomePage() {
             <AnimationHome>
               <OurSkill />
             </AnimationHome>
+            <ClientFeedback />
+            <Footer />
           </div>
         </div>
       </div>
