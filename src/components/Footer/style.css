@@ -6,9 +6,10 @@
   display: flex;
   align-items: center;
   padding: 147px 0 200px;
+  height: calc(100vh - 6rem);
 }
 
-.footer p,span {
+.footer p, span {
   font-size: 0.875rem;
 }
 
