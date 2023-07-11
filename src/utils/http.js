@@ -1,11 +1,12 @@
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import config from '../constants/config'
 
 class Http {
   instance
   constructor() {
     this.instance = axios.create({
-      baseURL: 'http://localhost:1337/api',
+      baseURL: config.baseUrl,
       timeout: 10000,
       headers: {
         'Content-Type': 'application/json'
@@ -25,7 +26,7 @@ class Http {
         return response
       },
       function (error) {
-        toast.error('message')
+        toast.error(error?.response.data.error.message || 'Request failed with status code 400')
         return Promise.reject(error)
       }
     )
