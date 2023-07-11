@@ -10,20 +10,20 @@ import {Services} from '../../components/HomePage/Services'
 import {Value} from '../../components/HomePage/Value'
 import {Teams} from '../../components/HomePage/Teams'
 import '../../scss/components/homePage.scss'
-import { useEffect, useState } from 'react'
-import { useAnimation, motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+import {useEffect, useState} from 'react'
+import {useAnimation, motion} from 'framer-motion'
+import {useInView} from 'react-intersection-observer'
 import Footer from '../../components/Footer'
 import ClientFeedback from '../../components/HomePage/ClientFeedback'
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0 }
+  visible: {opacity: 1, scale: 1, transition: {duration: 0.5}},
+  hidden: {opacity: 0, scale: 0}
 }
 
-const AnimationHome = ({ num, scrollToNextSection, isActive, children }) => {
+const AnimationHome = ({num, scrollToNextSection, isActive, children}) => {
   const control = useAnimation()
-  const [ref, inView] = useInView({ threshold: 0.5 })
+  const [ref, inView] = useInView({threshold: 0.5})
 
   useEffect(() => {
     if (inView) {
@@ -50,7 +50,7 @@ export default function HomePage() {
   const scrollToNextSection = () => {
     setActiveSection((prevSection) => prevSection + 1);
     const nextSectionOffset = (activeSection + 1) * window.innerHeight;
-    window.scrollTo({ top: nextSectionOffset, behavior: 'smooth' });
+    window.scrollTo({top: nextSectionOffset, behavior: 'smooth'});
   };
   return (
     <>
@@ -61,34 +61,36 @@ export default function HomePage() {
           <div className='placeSideBar'></div>
           <div className='mainHomeContent'>
             <AnimationHome>
-              <Home />
+              <Home/>
             </AnimationHome>
             <AnimationHome>
-              <Portfolio />
+              <Portfolio/>
             </AnimationHome>
             <AnimationHome>
-              <SliderPortfolio />
+              <SliderPortfolio/>
             </AnimationHome>
             <AnimationHome>
-              <News />
+              <News/>
             </AnimationHome>
             <AnimationHome>
-              <AboutUs />
+              <AboutUs/>
             </AnimationHome>
             <AnimationHome>
-              <OurSkill />
+              <OurSkill/>
             </AnimationHome>
             <AnimationHome>
-              <Services />
-            </AnimationHome>
-             <AnimationHome>
-              <Value />
+              <Services/>
             </AnimationHome>
             <AnimationHome>
-              <Teams />
+              <Value/>
             </AnimationHome>
-            <ClientFeedback />
-            <Footer />
+            <AnimationHome>
+              <Teams/>
+            </AnimationHome>
+            <AnimationHome>
+              <ClientFeedback/>
+            </AnimationHome>
+            <Footer/>
           </div>
         </div>
       </div>

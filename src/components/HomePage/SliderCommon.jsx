@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import '../../scss/components/SliderPortfolio.scss'
 import '../../scss/components/sliderCommon.scss'
 import persion from '../../assets/images/persion.png'
-import {CardProfile} from "src/scss/components/CardProfile";
+import {CardProfile} from "src/components/HomePage/CardProfile.jsx";
 
 
 export function SliderCommon() {
