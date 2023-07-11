@@ -52,4 +52,12 @@
       }
     }
   }
+
+  .active {
+    .fs-11 {
+      opacity: unset !important;
+    }
+
+    color: white;
+  }
 }

@@ -15,6 +15,7 @@ import {useAnimation, motion} from 'framer-motion'
 import {useInView} from 'react-intersection-observer'
 import Footer from '../../components/Footer'
 import ClientFeedback from '../../components/HomePage/ClientFeedback'
+import {Element} from 'react-scroll'
 
 const boxVariant = {
   visible: {opacity: 1, scale: 1, transition: {duration: 0.5}},
@@ -60,39 +61,61 @@ export default function HomePage() {
         <div className='mainContainerHome flex h-full w-full justify-between pt-24'>
           <div className='placeSideBar'></div>
           <div className='mainHomeContent'>
-            <AnimationHome>
-              <Home/>
-            </AnimationHome>
-            <AnimationHome>
-              <Portfolio/>
-            </AnimationHome>
-            <AnimationHome>
-              <SliderPortfolio/>
-            </AnimationHome>
-            <AnimationHome>
-              <News/>
-            </AnimationHome>
-            <AnimationHome>
-              <AboutUs/>
-            </AnimationHome>
-            <AnimationHome>
-              <OurSkill/>
-            </AnimationHome>
-            <AnimationHome>
-              <Services/>
-            </AnimationHome>
-            <AnimationHome>
-              <Value/>
-            </AnimationHome>
-            <AnimationHome>
-              <Teams/>
-            </AnimationHome>
-            <AnimationHome>
-              <ClientFeedback/>
-            </AnimationHome>
-            <AnimationHome>
-              <Footer/>
-            </AnimationHome>
+            <Element id="Home">
+              <AnimationHome>
+                <Home/>
+              </AnimationHome>
+            </Element>
+            <Element id="Portfolio">
+              <AnimationHome>
+                <Portfolio/>
+              </AnimationHome>
+            </Element>
+            <Element id="Portfolio">
+              <AnimationHome>
+                <SliderPortfolio/>
+              </AnimationHome>
+            </Element>
+            <Element id="News">
+              <AnimationHome>
+                <News/>
+              </AnimationHome>
+            </Element>
+            <Element id="About us">
+              <AnimationHome>
+                <AboutUs/>
+              </AnimationHome>
+            </Element>
+            <Element id="Our skill">
+              <AnimationHome>
+                <OurSkill/>
+              </AnimationHome>
+            </Element>
+            <Element id="Services">
+              <AnimationHome>
+                <Services/>
+              </AnimationHome>
+            </Element>
+            <Element id="Value">
+              <AnimationHome>
+                <Value/>
+              </AnimationHome>
+            </Element>
+            <Element id="Team">
+              <AnimationHome>
+                <Teams/>
+              </AnimationHome>
+            </Element>
+            <Element id="Feedback">
+              <AnimationHome>
+                <ClientFeedback/>
+              </AnimationHome>
+            </Element>
+            <Element id="Contact us">
+              <AnimationHome>
+                <Footer/>
+              </AnimationHome>
+            </Element>
           </div>
         </div>
       </div>
