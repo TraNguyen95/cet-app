@@ -14,16 +14,20 @@ export function News() {
           <span className='mb-2 flex justify-center text-white'>Last post</span>
           <span className='ourNews flex justify-center text-white'>Our News</span>
         </div>
-        <div className='wap-item grid grid-cols-3 gap-12 pt-8'>
-          <NewCard/>
-          <NewCard/>
-          <NewCard/>
-        </div>
-        <div className='button-custom absolute z-30'>
-          <Link to='/' className='mr-3'>
-            <img src={iconRow} alt=''/>
-          </Link>
-          <span className='top-2 text-white opacity-40 text-xs'>ニュース一覧</span>
+        <div>
+          <div className='wap-item grid grid-cols-3 w-full gap-12 pt-8'>
+            <NewCard/>
+            <NewCard/>
+            <NewCard/>
+          </div>
+          <div className="w-full pt-8">
+            <div className='flex items-center'>
+              <Link to='/' className='mr-3'>
+                <img src={iconRow} alt=''/>
+              </Link>
+              <span className='top-2 text-white opacity-40 text-xs'>ニュース一覧</span>
+            </div>
+          </div>
         </div>
         <div className='ButtonGoDown absolute'>
           <ButtonGoDown/>

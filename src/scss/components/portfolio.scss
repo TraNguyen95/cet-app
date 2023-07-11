@@ -1,4 +1,5 @@
 @import "../variables.scss";
+
 .portfolio {
   background-position: center;
   background-repeat: no-repeat;
@@ -12,11 +13,13 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     span {
       text-align: center;
       line-height: $line-height-large;
       font-family: $font-family-base;
     }
+
     .text {
       font-family: $font-family-bold;
       font-weight: $font-weight-bold;
@@ -24,12 +27,7 @@
     }
 
   }
-  .ButtonGoDown {
-    right: 30px;
-    bottom: 30px;
-    position: absolute;
-    z-index: 30;
-  }
+
   .wrap-img {
     max-width: 656px;
     position: absolute;
