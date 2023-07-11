@@ -67,7 +67,7 @@ export default function HomePage() {
               <Portfolio />
             </AnimationHome>
             <AnimationHome>
-              <SliderHome />
+              <SliderPortfolio />
             </AnimationHome>
             <AnimationHome>
               <News />
@@ -84,8 +84,8 @@ export default function HomePage() {
              <AnimationHome>
               <Value />
             </AnimationHome>
-             <AnimationHome>
-              <Home />
+            <AnimationHome>
+              <Teams />
             </AnimationHome>
             <ClientFeedback />
             <Footer />
