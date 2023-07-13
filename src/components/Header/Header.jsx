@@ -26,7 +26,7 @@ export default function Header({HandleOpenSideBar}) {
       <div className='w-1/2'>
         <div className='flex h-full items-center'>
           <Link to='/' className=''>
-            <img src={windowSize?.width > 500 ? Logo : logoMobile} alt='Cet-App'/>
+            <img src={windowSize?.width > 767 ? Logo : logoMobile} alt='Cet-App'/>
           </Link>
         </div>
       </div>
