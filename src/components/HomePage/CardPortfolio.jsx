@@ -6,7 +6,7 @@ import iconRow from '../../assets/images/iconRow.png'
 export const CardPortfolio = () => {
   return (
     <>
-      <div className='slider-item flex items-center justify-items-center'>
+      <div className='slider-item flex items-center justify-items-center max-[500px]:flex-wrap'>
         <div className='slider-text-left flex h-full items-center'>
           <div className='flex  flex-col'>
             <Link to='/' className='linkText'>
@@ -14,7 +14,6 @@ export const CardPortfolio = () => {
             </Link>
             <span className='text-large text-white'>
               投げ銭型ライブ
-              <br/>
               配信アプリ
             </span>
             <span className='text-small break-words text-white'>
@@ -27,17 +26,18 @@ export const CardPortfolio = () => {
         <div className='slider-image'>
           <img src={portImage} alt='port'/>
         </div>
-        <div className='slider-text-right flex h-full items-center justify-center'>
-          <div className='flex flex-col'>
-            <div className='mb-3 flex w-full justify-center'>
+        
+      </div>
+      <div className='slider-text-right flex h-full items-center justify-center'>
+          <div className='flex flex-col max-[500px]:flex-row'>
+            <div className='mb-3 flex w-full justify-center max-[500px]:mb-0'>
               <Link to='/' className=''>
-                <img src={iconRow} alt=''/>
+                <img className='max-[500px]:w-10 max-[500px]:h-10' src={iconRow} alt=''/>
               </Link>
             </div>
-            <span className='top-2 text-white opacity-40'>VISIT THIS SITE</span>
+            <span className='top-2 text-white opacity-70 max-[500px]:text-[12px]'>VISIT THIS SITE</span>
           </div>
         </div>
-      </div>
       {' '}
     </>
   )

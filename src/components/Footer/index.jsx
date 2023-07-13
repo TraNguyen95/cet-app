@@ -1,4 +1,5 @@
 import backgroundFooter from '../../assets/images/backgroundFooter.png'
+import Frame29 from '../../assets/images/Frame29.png'
 import './style.css'
 function Footer() {
   return (
@@ -46,7 +47,7 @@ function Footer() {
             </div>
           </div>
           <div className='basis-1/3 max-lg:w-full max-lg:basis-full'>
-            <img className='max-lg:w-2/3' src='/images/Frame29.png' />
+            <img className='max-lg:w-2/3' src={Frame29} />
           </div>
         </div>
       </div>

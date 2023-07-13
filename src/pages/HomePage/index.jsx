@@ -73,57 +73,57 @@ export default function HomePage() {
         <div className='mainContainerHome flex h-full w-full justify-between pt-24'>
           <div className='placeSideBar bg-darkGray-900'></div>
           <div className='mainHomeContent'>
-            <Element name="Home">
+            <Element id="Home">
               <AnimationHome>
                 <Home/>
               </AnimationHome>
             </Element>
-            <Element name="Portfolio">
+            <Element id="Portfolio">
               <AnimationHome>
                 <Portfolio/>
               </AnimationHome>
             </Element>
-            <Element name="Portfolio1">
+            <Element id="Portfolio1">
               <AnimationHome>
                 <SliderPortfolio/>
               </AnimationHome>
             </Element>
-            <Element name="News">
+            <Element id="News">
               <AnimationHome>
                 <News/>
               </AnimationHome>
             </Element>
-            <Element name="About Us">
+            <Element id="About Us">
               <AnimationHome>
                 <AboutUs/>
               </AnimationHome>
             </Element>
-            <Element name="Our Skill">
+            <Element id="Our Skill">
               <AnimationHome>
                 <OurSkill/>
               </AnimationHome>
             </Element>
-            <Element name="Services">
+            <Element id="Services">
               <AnimationHome>
                 <Services/>
               </AnimationHome>
             </Element>
-            <Element name="Value">
+            <Element id="Value">
               <AnimationHome>
                 <Value/>
               </AnimationHome>
             </Element>
-            <Element name="Team">
+            <Element id="Team">
               <AnimationHome>
                 <Teams/>
               </AnimationHome>
             </Element>
-            <Element name="Feedback">
+            <Element id="Feedback">
               <AnimationHome>
                 <ClientFeedback/>
               </AnimationHome>
             </Element>
-            <Element name="Contact Us">
+            <Element id="Contact Us">
               <AnimationHome>
                 <Footer/>
               </AnimationHome>
