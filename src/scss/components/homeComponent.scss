@@ -3,7 +3,6 @@
 .homeComponent {
   position: relative;
   width: 100%;
-  height: calc(100vh - 6rem);
 
   .textHome {
     left: 5%;
@@ -20,12 +19,12 @@
       font-family: $font-family-bold;
     }
   }
-  
-    .banner {
-      height: 100%;
-      object-fit: cover;
-      object-position: bottom;
-    }
+
+  .banner {
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
 
 }
 
@@ -33,12 +32,13 @@
   .homeComponent {
     .textHome {
       top: 30px;
+
       span {
         font-size: 30px;
       }
     }
   }
-  
+
 }
 
 

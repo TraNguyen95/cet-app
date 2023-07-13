@@ -23,7 +23,7 @@ const ClientFeedback = () => {
     slidesToScroll: 1,
   }
   return (
-    <div className='section-nine section-ten section flex flex-col wrap-clientFeedback relative'>
+    <div className='section-nine section-ten section flex flex-col wrap-clientFeedback relative heightSection'>
       <div className="pb-20">
         <div className='text-white flex justify-center'>Feedback</div>
         <h2 className='title flex justify-center textLarge text-white'>Client Voices</h2>

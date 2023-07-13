@@ -5,7 +5,7 @@ import Rectangle30 from '../../assets/images/Rectangle30.png'
 export const AboutUs = () => {
   return (
     <>
-      <div className='aboutUS flex flex-col bg-darkGray-900'>
+      <div className='aboutUS flex flex-col bg-darkGray-900 heightSection'>
         <div className='ButtonGoDown absolute'>
           <ButtonGoDown target="Our Skill"/>
         </div>

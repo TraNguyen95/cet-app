@@ -7,7 +7,7 @@ import iconRow from "src/assets/images/iconRow.png";
 export const OurSkill = () => {
   return (
     <>
-      <div className='ourSkill flex flex-col bg-darkGray-900 relative'>
+      <div className='ourSkill flex flex-col bg-darkGray-900 relative heightSection'>
         <div className='ButtonGoDown absolute'>
           <ButtonGoDown target="Services"/>
         </div>

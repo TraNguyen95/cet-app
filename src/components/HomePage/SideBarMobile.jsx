@@ -33,7 +33,7 @@ export const SideBarMobile = ({position, handleCloseSideBar}) => {
           <img src={close} alt=""/>
         </div>
       </div>
-      <div className="h-full flex items-center flex-col justify-start items-baseline">
+      <div className="flex items-center flex-col justify-start items-baseline">
         <div>
           {arrItemSideBar.map((item, index) => (
             <div key={index} className='wrap-item-sideBar  flex justify-start'>
