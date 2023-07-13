@@ -60,5 +60,10 @@
       }
     }
   }
+}
 
+@include screen(991) {
+  .slider-home {
+    padding-right: 0;
+  }
 }

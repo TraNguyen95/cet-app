@@ -9,10 +9,10 @@ export const OurSkill = () => {
     <>
       <div className='ourSkill flex flex-col bg-darkGray-900 relative'>
         <div className='ButtonGoDown absolute'>
-          <ButtonGoDown/>
+          <ButtonGoDown target="Services"/>
         </div>
         <div className='flex h-full'>
-          <div className='ourSkill-wrap-text flex flex-col text-white justify-around'>
+          <div className='ourSkill-wrap-text flex flex-col text-white justify-items-start pt-6'>
             <div className="flex flex-col">
               <span className='mb-3'>Skill</span>
               <span className='text-large mb-4'>私たちの技術</span>
@@ -25,14 +25,16 @@ export const OurSkill = () => {
                 のWebアプリケーションを組み込んだハイブリッド方式のアプリケーション、flutterを用いたネイティブアプリまで、お客様のご予算や特性に合わせて最適な開発プラットフォームを提案します。{' '}
               </p>
             </div>
-            <div className='flex button-custom items-center pb-8'>
-              <div className='mb-3 flex justify-center mr-3'>
-                <Link to='/' className=''>
-                  <img src={iconRow} alt=''/>
-                </Link>
-              </div>
-              <span className='top-2 text-white opacity-40 no-ww text-xs whitespace-nowrap'>お問い合わせはこちら</span>
+
+            <div className='flex justify-center absolute left-0 bottom-10'>
+              <Link to='/' className=''>
+                <img src={iconRow} alt=''/>
+              </Link>
+              <span
+                className='top-2 text-white opacity-40 no-ww text-xs whitespace-nowrap flex items-center ml-3'>お問い合わせはこちら</span>
             </div>
+
+
           </div>
           <div className='wrap-img h-5/6 w-full'>
             <img src={Rectangle31} alt='' className='h-full w-full'/>

@@ -20,7 +20,7 @@ export function News() {
             <NewCard/>
             <NewCard/>
           </div>
-          <div className="w-full pt-8">
+          <div className="ButtonGoDown left-0">
             <div className='flex items-center'>
               <Link to='/' className='mr-3'>
                 <img src={iconRow} alt=''/>
@@ -29,8 +29,8 @@ export function News() {
             </div>
           </div>
         </div>
-        <div className='ButtonGoDown absolute'>
-          <ButtonGoDown/>
+        <div className='ButtonGoDown'>
+          <ButtonGoDown target="About Us"/>
         </div>
       </div>
     </>

@@ -60,6 +60,7 @@ $res_01365: "only screen and (max-width: 1365px)";
 $res_1366: "only screen and (min-width: 1366px)";
 $res_1400: "only screen and (min-width: 1400px)";
 $res_1600: "only screen and (min-width: 1600px)";
+$res_01600: "only screen and (max-width: 1600px)";
 
 $res_12001599: "only screen and (min-width: 1200px) and (max-width: 1599px)";
 
@@ -235,6 +236,12 @@ $res_12001599: "only screen and (min-width: 1200px) and (max-width: 1599px)";
 
   @if $point==1600 {
     @media #{$res_1600} {
+      @content;
+    }
+  }
+
+  @if $point==01600 {
+    @media #{$res_01600} {
       @content;
     }
   }

@@ -16,6 +16,7 @@ import {useInView} from 'react-intersection-observer'
 import Footer from '../../components/Footer'
 import ClientFeedback from '../../components/HomePage/ClientFeedback'
 import {Element} from 'react-scroll'
+import {SideBarMobile} from "src/components/HomePage/SideBarMobile.jsx";
 
 const boxVariant = {
   visible: {opacity: 1, scale: 1, transition: {duration: 0.5}},
@@ -53,65 +54,76 @@ export default function HomePage() {
     const nextSectionOffset = (activeSection + 1) * window.innerHeight;
     window.scrollTo({top: nextSectionOffset, behavior: 'smooth'});
   };
+
+  const [position, setPosition] = useState("-100%");
+  const HandleOpenSideBar = () => {
+    setPosition("0")
+
+  }
+  const handleCloseSideBar = () => {
+    setPosition("-100%")
+  }
+
   return (
     <>
       <div className='min-h-screen bg-darkGray-900'>
-        <Header/>
+        <Header HandleOpenSideBar={HandleOpenSideBar}/>
         <SideBar/>
+        <SideBarMobile position={position} handleCloseSideBar={handleCloseSideBar}/>
         <div className='mainContainerHome flex h-full w-full justify-between pt-24'>
-          <div className='placeSideBar'></div>
+          <div className='placeSideBar bg-darkGray-900'></div>
           <div className='mainHomeContent'>
-            <Element id="Home">
+            <Element name="Home">
               <AnimationHome>
                 <Home/>
               </AnimationHome>
             </Element>
-            <Element id="Portfolio">
+            <Element name="Portfolio">
               <AnimationHome>
                 <Portfolio/>
               </AnimationHome>
             </Element>
-            <Element id="Portfolio">
+            <Element name="Portfolio1">
               <AnimationHome>
                 <SliderPortfolio/>
               </AnimationHome>
             </Element>
-            <Element id="News">
+            <Element name="News">
               <AnimationHome>
                 <News/>
               </AnimationHome>
             </Element>
-            <Element id="About us">
+            <Element name="About Us">
               <AnimationHome>
                 <AboutUs/>
               </AnimationHome>
             </Element>
-            <Element id="Our skill">
+            <Element name="Our Skill">
               <AnimationHome>
                 <OurSkill/>
               </AnimationHome>
             </Element>
-            <Element id="Services">
+            <Element name="Services">
               <AnimationHome>
                 <Services/>
               </AnimationHome>
             </Element>
-            <Element id="Value">
+            <Element name="Value">
               <AnimationHome>
                 <Value/>
               </AnimationHome>
             </Element>
-            <Element id="Team">
+            <Element name="Team">
               <AnimationHome>
                 <Teams/>
               </AnimationHome>
             </Element>
-            <Element id="Feedback">
+            <Element name="Feedback">
               <AnimationHome>
                 <ClientFeedback/>
               </AnimationHome>
             </Element>
-            <Element id="Contact us">
+            <Element name="Contact Us">
               <AnimationHome>
                 <Footer/>
               </AnimationHome>

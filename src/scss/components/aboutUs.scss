@@ -32,6 +32,13 @@
 
   .wrap-img {
     width: 45%;
+    height: fit-content;
   }
 
+}
+
+@include screen(991) {
+  .aboutUS {
+    padding-right: 20px;
+  }
 }

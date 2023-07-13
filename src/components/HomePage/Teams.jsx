@@ -15,7 +15,7 @@ export const Teams = () => {
         <SliderCommon/>
       </div>
       <div className='ButtonGoDown'>
-        <ButtonGoDown/>
+        <ButtonGoDown target="Feedback"/>
       </div>
 
     </div>

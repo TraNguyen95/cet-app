@@ -32,11 +32,19 @@
 
   .wrap-img {
     width: 45%;
+    height: fit-content;
   }
 
   .button-custom {
-
   }
+}
 
+@include screen(991) {
+  .ourSkill {
+    padding-right: 20px;
 
+    .ourSkill-wrap-text {
+      padding-right: 20px;
+    }
+  }
 }

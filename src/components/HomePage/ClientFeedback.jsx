@@ -117,7 +117,7 @@ const ClientFeedback = () => {
         </Slider>
       </div>
       <div className="ButtonGoDown">
-        <ButtonGoDown/>
+        <ButtonGoDown target="Contact Us"/>
       </div>
     </div>
   )

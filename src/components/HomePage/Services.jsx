@@ -9,10 +9,10 @@ export function Services() {
   return (
     <div className="wrap-services relative">
       <div className="flex justify-between pb-8 pl-2">
-        <div className="w-1/3">
+        <div className="w-1/3 wap-textLan-space">
           <span className="text-white flex flex-col mb-3">What we do</span><span className="textLarge text-white">Our services</span>
         </div>
-        <div className="flex items-center w-2/3">
+        <div className="flex items-center w-2/3 textIpad">
           <p className="text-white">クリエイティブ × プランニング × エンジニアリング企画戦略・デザイン・開発・保守まで、ITに関するあらゆる課題に対応</p>
         </div>
       </div>
@@ -51,7 +51,7 @@ export function Services() {
         </div>
       </div>
       <div className="ButtonGoDown">
-        <ButtonGoDown/>
+        <ButtonGoDown target="Team"/>
       </div>
     </div>
   )

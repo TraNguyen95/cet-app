@@ -13,3 +13,33 @@
   font-family: $font-family-bold;
   line-height: $line-height-large
 }
+
+.menuIcon-mobile {
+  display: none;
+}
+
+.menuIcon-mobile {
+  display: none;
+}
+
+@include screen(767) {
+  .mainHomeContent {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .placeSideBar {
+    display: none;
+  }
+  .Header {
+    padding: 0 3px 0 15px !important;
+
+    .menuIcon-mobile {
+      display: flex;
+    }
+
+    .Contact-pc {
+      display: none !important;
+    }
+  }
+
+}
