@@ -5,7 +5,7 @@
   width: 100%;
   height: calc(100vh - 6rem);
   padding-right: 100px;
-  
+
   .fontText {
     font-family: $font-family-bold;
     font-weight: 700;
@@ -29,5 +29,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+  }
+}
+
+@include screen(768) {
+  .wrap-services {
+    padding-right: 20px;
+
+    .textIpad {
+      width: 50%;
+    }
+
+    .wap-textLan-space {
+      width: 50%;
+    }
   }
 }

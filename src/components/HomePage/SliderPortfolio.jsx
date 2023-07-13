@@ -30,7 +30,7 @@ export function SliderPortfolio() {
           <CardPortfolio/>
         </Slider>
         <div className='ButtonGoDown'>
-          <ButtonGoDown/>
+          <ButtonGoDown target="News"/>
         </div>
       </div>
     </>

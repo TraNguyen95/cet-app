@@ -23,7 +23,7 @@ export function Value() {
         </div>
       </div>
       <div className="ButtonGoDown">
-        <ButtonGoDown/>
+        <ButtonGoDown target="Team"/>
       </div>
     </div>
   )

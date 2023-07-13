@@ -1,6 +1,10 @@
 @import "../variables";
 
 .homeComponent {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 6rem);
+
   .textHome {
     left: 5%;
     top: 68px;
@@ -16,9 +20,12 @@
       font-family: $font-family-bold;
     }
   }
-
-  .banner {
-  }
+  
+    .banner {
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
 
 }
 

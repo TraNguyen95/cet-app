@@ -34,6 +34,10 @@
     align-items: center;
     justify-content: space-between;
   }
+}
 
-
+@include screen(991) {
+  .wap-item {
+    padding-right: 20px !important;
+  }
 }

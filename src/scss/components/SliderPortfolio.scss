@@ -70,7 +70,12 @@
       }
     }
   }
+}
 
+@include screen(991) {
+  .slider-home {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {

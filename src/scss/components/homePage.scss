@@ -14,11 +14,32 @@
   line-height: $line-height-large
 }
 
-#Home {
-  height: calc(100vh - 72px);
-  .banner {
-    height: calc(100vh - 72px);
-    object-fit: cover;
-    object-position: bottom;
+.menuIcon-mobile {
+  display: none;
+}
+
+.menuIcon-mobile {
+  display: none;
+}
+
+@include screen(768) {
+  .mainHomeContent {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .placeSideBar {
+    display: none;
+  }
+  .Header {
+    padding: 0 3px 0 15px !important;
+
+    .menuIcon-mobile {
+      display: flex;
+    }
+
+    .Contact-pc {
+      display: none !important;
+    }
   }
 }
+
