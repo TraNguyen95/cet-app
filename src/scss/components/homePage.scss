@@ -13,3 +13,12 @@
   font-family: $font-family-bold;
   line-height: $line-height-large
 }
+
+#Home {
+  height: calc(100vh - 72px);
+  .banner {
+    height: calc(100vh - 72px);
+    object-fit: cover;
+    object-position: bottom;
+  }
+}

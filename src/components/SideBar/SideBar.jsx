@@ -16,7 +16,7 @@ export const SideBar = () => {
   ]
   return (
 
-    <div className='side-bar fixed left-0 top-0 z-40 h-full bg-darkGray-900'>
+    <div className='side-bar fixed left-0 top-0 z-40 h-full bg-darkGray-900 max-md:hidden'>
       <div className='section-items fixed top-1/2 -translate-y-1/2 transform'>
         {arrItemSideBar.map((item, index) => (
           <div key={index} className='wrap-item-sideBar'>

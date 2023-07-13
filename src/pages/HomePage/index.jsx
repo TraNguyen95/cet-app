@@ -59,8 +59,8 @@ export default function HomePage() {
         <Header/>
         <SideBar/>
         <div className='mainContainerHome flex h-full w-full justify-between pt-24'>
-          <div className='placeSideBar'></div>
-          <div className='mainHomeContent'>
+          <div className='placeSideBar max-md:hidden'></div>
+          <div className='mainHomeContent max-md:w-full'>
             <Element id="Home">
               <AnimationHome>
                 <Home/>

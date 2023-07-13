@@ -22,6 +22,18 @@
 
 }
 
+@media screen and (max-width: 768px) {
+  .homeComponent {
+    .textHome {
+      top: 30px;
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+  
+}
+
 
 
 
