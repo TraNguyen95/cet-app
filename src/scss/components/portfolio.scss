@@ -6,7 +6,6 @@
   background-image: url("../../assets/images/portfolitoVector.png");
   position: relative;
   width: 100%;
-  height: calc(100vh - 6rem);
 
   .portfolio-text {
     display: flex;
@@ -41,7 +40,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  
+
   .slider-home {
     padding: 10px 0;
   }

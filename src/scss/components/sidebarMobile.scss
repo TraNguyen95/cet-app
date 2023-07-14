@@ -67,9 +67,10 @@
   }
 }
 
-@include screen(480) {
+@include screen("mobile") {
   .sideBarMobile {
     width: 100%;
+    overflow-y: auto;
   }
 }
 

@@ -7,7 +7,7 @@ import ButtonGoDown from "src/components/Button";
 
 export function Services() {
   return (
-    <div className="wrap-services relative">
+    <div className="wrap-services relative heightSection">
       <div className="flex justify-between pb-8 pl-2">
         <div className="w-1/3 wap-textLan-space">
           <span className="text-white flex flex-col mb-3">What we do</span><span className="textLarge text-white">Our services</span>
@@ -51,7 +51,7 @@ export function Services() {
         </div>
       </div>
       <div className="ButtonGoDown">
-        <ButtonGoDown target="Team"/>
+        <ButtonGoDown target="Value"/>
       </div>
     </div>
   )

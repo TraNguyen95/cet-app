@@ -1,9 +1,10 @@
 import backgroundFooter from '../../assets/images/backgroundFooter.png'
 import Frame29 from '../../assets/images/Frame29.png'
 import './style.css'
+
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer heightSection">
       <div className=' text-white'>
         <h4 className='text-white'>お気軽にお問い合わせください</h4>
         <h3 className='mt-2 mb-[94px] text-5xl font-extrabold text-white max-lg:mb-[30px]'>Contact Us</h3>
@@ -39,15 +40,15 @@ function Footer() {
                 <h4 className='text-2xl mb-2'>Address</h4>
                 <span className='opacity-60 leading-5'>
                   〒163-0532
-                  <br />
+                  <br/>
                   東京都新宿区西新宿１丁目２６−２
-                  <br /> 新宿野村ビル 32階
+                  <br/> 新宿野村ビル 32階
                 </span>
               </div>
             </div>
           </div>
           <div className='basis-1/3 max-lg:w-full max-lg:basis-full'>
-            <img className='max-lg:w-2/3' src={Frame29} />
+            <img className='max-lg:w-2/3' src={Frame29}/>
           </div>
         </div>
       </div>

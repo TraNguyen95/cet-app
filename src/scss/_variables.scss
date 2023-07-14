@@ -30,7 +30,8 @@ $orange: #ec6b33 !default;
 $blue: #36AAFA !default;
 
 $width-sideBar: 194px;
-
+$height-header: 6rem;
+$height-header-mobile: 70px;
 
 $res_280: "only screen and (max-width: 280px)";
 $res_240320: "only screen and (min-width: 240px) and (max-width: 320px)";
@@ -63,6 +64,7 @@ $res_1600: "only screen and (min-width: 1600px)";
 $res_01600: "only screen and (max-width: 1600px)";
 
 $res_12001599: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+
 
 // mixin screen responsive
 @mixin screen($point) {
@@ -102,7 +104,7 @@ $res_12001599: "only screen and (min-width: 1200px) and (max-width: 1599px)";
     }
   }
 
-  @if $point==576 {
+  @if $point=="mobile" {
     @media #{$res_576} {
       @content;
     }
@@ -114,8 +116,8 @@ $res_12001599: "only screen and (min-width: 1200px) and (max-width: 1599px)";
     }
   }
 
-  @if $point==767 {
-    @media #{$res_767} {
+  @if $point==769 {
+    @media #{$res_769} {
       @content;
     }
   }

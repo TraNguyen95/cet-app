@@ -21,7 +21,7 @@ export function SliderPortfolio() {
   }
   return (
     <>
-      <div className='slider-home relative'>
+      <div className='slider-home relative heightSection'>
         <Slider {...settings}>
           <CardPortfolio/>
           <CardPortfolio/>
