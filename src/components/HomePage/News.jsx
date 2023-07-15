@@ -21,7 +21,7 @@ export function News() {
           </div>
           <div className="wrap-buttonCardNew">
             <div className='flex items-center'>
-              <Link to='/' className='mr-3'>
+              <Link to='/posts' className='mr-3'>
                 <img src={iconRow} alt=''/>
               </Link>
               <span className='top-2 text-white opacity-40 text-xs'>ニュース一覧</span>

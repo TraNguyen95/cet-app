@@ -1,10 +1,10 @@
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import '../../scss/components/SliderPortfolio.scss'
 import '../../scss/components/sliderCommon.scss'
 import persion from '../../assets/images/persion.png'
 import {CardProfile} from "src/components/HomePage/CardProfile.jsx";
+import React, {useEffect, useRef, useState} from "react";
 
 
 export function SliderCommon() {
@@ -15,11 +15,21 @@ export function SliderCommon() {
     dots: true,
     prevArrow: <></>,
     nextArrow: <></>,
-    dotsClass: 'slick-slide-common',
-    infinite: false,
-    speed: 500,
+    dotsClass: 'slick-slide-common  h-full',
     slidesToShow: 3,
     slidesToScroll: 1,
+    swipeToSlide: true,
+
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          verticalSwiping: true,
+          swipeToSlide: true,
+          vertical: true,
+        }
+      }
+    ]
   }
   return (
     <>
@@ -29,7 +39,10 @@ export function SliderCommon() {
           <CardProfile/>
           <CardProfile/>
           <CardProfile/>
+
           <CardProfile/>
+
+
         </Slider>
 
       </div>
