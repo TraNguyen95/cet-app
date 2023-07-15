@@ -35,6 +35,11 @@
       &.active {
         .fs-11 {
           opacity: 1;
+          color: #ffffff;
+          text-transform: uppercase;
+          opacity: 0.4;
+          font-size: 13px;
+          caret-color: transparent;
         }
 
         .dot {
