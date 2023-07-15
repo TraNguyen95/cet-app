@@ -30,7 +30,13 @@ export default function PostsList() {
           <h3 className='mb-10 text-left text-5xl text-white'>{post.title}</h3>
           <div className='text-sm text-white text-opacity-50'>{convertDateFormat(post.createdAt)}</div>
           <div className='description mt-10 text-white'>
-            <ReactMarkdown>{post.description}</ReactMarkdown>
+            <ReactMarkdown
+              transformImageUri={(uri) =>
+                uri.startsWith('http') ? uri : `${import.meta.env.VITE_REACT_IMAGE_BASE_URL}${uri}`
+              }
+            >
+              {post.description}
+            </ReactMarkdown>
           </div>
         </div>
       </AnimationWrap>
