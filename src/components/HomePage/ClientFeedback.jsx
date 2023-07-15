@@ -1,10 +1,12 @@
 import React from 'react'
-import Slider, {Settings} from 'react-slick'
+import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import '../../scss/components/clientFeedback.scss'
 import Rec37 from '../../assets/images/Rectangle37.png'
 import Rec39 from '../../assets/images/Rectangle39.png'
+
+
 import ButtonGoDown from "src/components/Button";
 
 
@@ -73,7 +75,7 @@ const ClientFeedback = () => {
             </div>
           </div>
           <div className='person'>
-            <img className='overlay' src={Rec37} alt=''/>
+            <img className='overlay' src={Rec39} alt=''/>
             <p className='fs-14'>
               クオリティ、スピード、価格、信頼性、何をとっても満足しております。
               <br/>
@@ -94,7 +96,7 @@ const ClientFeedback = () => {
             </div>
           </div>
           <div className='person'>
-            <img className='overlay' src={Rec37} alt=''/>
+            <img className='overlay' src={Rec39} alt=''/>
             <p className='fs-14'>
               クオリティ、スピード、価格、信頼性、何をとっても満足しております。
               <br/>

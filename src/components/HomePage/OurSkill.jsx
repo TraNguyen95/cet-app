@@ -1,6 +1,7 @@
 import ButtonGoDown from '../Button'
 import '../../scss/components/ourSkill.scss'
 import Rectangle31 from '../../assets/images/rectangle31.png'
+import Rectangle31Mobile from '../../assets/images/Rectangle31Mobile.png'
 import {Link} from "react-router-dom";
 import iconRow from "src/assets/images/iconRow.png";
 
@@ -24,20 +25,20 @@ export const OurSkill = () => {
                 を用いたネイティブアプリケーションから、一部がHTM5 + CSS + JavaScript
                 のWebアプリケーションを組み込んだハイブリッド方式のアプリケーション、flutterを用いたネイティブアプリまで、お客様のご予算や特性に合わせて最適な開発プラットフォームを提案します。{' '}
               </p>
-            </div>
-
-            <div className='flex justify-center absolute left-0 bottom-10'>
-              <Link to='/' className=''>
-                <img src={iconRow} alt=''/>
-              </Link>
-              <span
-                className='top-2 text-white opacity-40 no-ww text-xs whitespace-nowrap flex items-center ml-3'>お問い合わせはこちら</span>
+              <div className='flex justify-center absolute button-link left-0 bottom-10'>
+                <Link to='/' className=''>
+                  <img src={iconRow} alt=''/>
+                </Link>
+                <span
+                  className='top-2 text-white opacity-40 no-ww text-xs whitespace-nowrap flex items-center ml-3'>お問い合わせはこちら</span>
+              </div>
             </div>
 
 
           </div>
           <div className='wrap-img h-5/6 w-full'>
-            <img src={Rectangle31} alt='' className='h-full w-full'/>
+            <img src={Rectangle31Mobile} className="w-full mobile" alt=""/>
+            <img src={Rectangle31} alt='' className='h-full w-full pc'/>
           </div>
         </div>
       </div>

@@ -11,6 +11,7 @@
   .ourSkill-wrap-text {
     width: 55%;
     padding-right: 130px;
+    height: fit-content;;
 
     .text-large {
       font-family: $font-family-bold;
@@ -18,6 +19,10 @@
       line-height: $line-height-large;
       font-weight: 800;
 
+    }
+
+    .button-link {
+      bottom: 10%;
     }
 
     .text-medium {
@@ -32,6 +37,14 @@
   .wrap-img {
     width: 45%;
     height: fit-content;
+
+    .pc {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
   }
 
   .button-custom {
@@ -51,6 +64,8 @@
 @include screen("mobile") {
   .ourSkill {
     padding-right: 0 !important;
+    background-position: 55% 100px;
+    background-size: cover;
   }
   .wrap-skillContent {
     flex-direction: column !important;
@@ -63,6 +78,26 @@
         font-size: 30px !important;
         line-height: 40px !important;
       }
+    }
+
+    .wrap-img {
+      width: 100%;
+      height: fit-content;
+
+      .pc {
+        display: none !important;
+      }
+
+      .mobile {
+        display: block !important;
+      }
+    }
+
+    .button-link {
+      display: flex;
+      position: unset;
+      width: fit-content;
+      margin-top: 28px;
     }
   }
 }

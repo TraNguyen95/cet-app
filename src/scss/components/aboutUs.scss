@@ -53,6 +53,8 @@
 @include screen("mobile") {
   .aboutUS {
     padding-right: 0 !important;
+    background-position: 55% 192px;
+    background-size: cover;
 
     .aboutUs-text {
       font-size: 30px !important;
@@ -63,6 +65,20 @@
     .years-text {
       font-size: 16px !important;
       margin-bottom: 10px !important;
+    }
+
+    .wrap-img {
+      width: 100% !important;
+      height: fit-content;
+      margin-top: 20px;
+
+      .pc {
+        display: none !important;
+      }
+
+      .mobile {
+        display: block !important;
+      }
     }
   }
   .wrap-aboutContent {
@@ -75,17 +91,5 @@
     }
   }
 
-  .wrap-img {
-    width: 100% !important;
-    height: fit-content;
-    margin-top: 20px;
 
-    .pc {
-      display: none !important;
-    }
-
-    .mobile {
-      display: block !important;
-    }
-  }
 }
