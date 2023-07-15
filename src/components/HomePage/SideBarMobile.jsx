@@ -29,9 +29,9 @@ export const SideBarMobile = ({position, handleCloseSideBar}) => {
           </Link>
 
         </div>
-        <div onClick={handleCloseSideBar}>
+        <button onClick={handleCloseSideBar} className="cursor-pointer p-4">
           <img src={close} alt=""/>
-        </div>
+        </button>
       </div>
       <div className="flex items-center flex-col justify-start items-baseline">
         <div>

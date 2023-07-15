@@ -1,6 +1,7 @@
 import ButtonGoDown from '../Button'
 import '../../scss/components/aboutUs.scss'
 import Rectangle30 from '../../assets/images/Rectangle30.png'
+import Rectangle1Mobile from '../../assets/images/Rectangle1Mobile.png'
 
 export const AboutUs = () => {
   return (
@@ -9,14 +10,15 @@ export const AboutUs = () => {
         <div className='ButtonGoDown absolute'>
           <ButtonGoDown target="Our Skill"/>
         </div>
-        <div className='flex h-full'>
+        <div className='flex h-full wrap-aboutContent'>
           <div className='wrap-img h-5/6 w-full'>
-            <img src={Rectangle30} alt='' className='h-full w-full'/>
+            <img src={Rectangle30} alt='' className='h-full w-full pc'/>
+            <img src={Rectangle1Mobile} className="mobile w-full h-full" alt=""/>
           </div>
           <div className='aboutUS-wrap-text flex flex-col text-white'>
             <span className='mb-3'>About us</span>
-            <span className='text-large mb-4'>私たちについて</span>
-            <span className='text-medium mb-8'>7 Years OfExperience</span>
+            <span className='text-large mb-4 aboutUs-text'>私たちについて</span>
+            <span className='text-medium mb-8 years-text'>7 Years OfExperience</span>
             <p>
               CETのアプリ開発はエンジニアリングだけに特化せず、プロジェクトの初動からデザインプロセスを連動し、デザインとエンジニアリングを両立させた開発を実現しています。
               <br/>

@@ -18,3 +18,13 @@
     height: fit-content;
   }
 }
+
+@include screen("mobile") {
+  .wrap-value {
+    padding-right: 0 !important;
+
+    div:first-child {
+      width: 100% !important;
+    }
+  }
+}
