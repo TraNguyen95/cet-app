@@ -6,8 +6,8 @@ import {useEffect, useState} from "react";
 
 export default function Header({HandleOpenSideBar}) {
   const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
+    width: window.innerWidth,
+    height: window.innerHeight,
   });
   useEffect(() => {
     function handleResize() {
