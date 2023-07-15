@@ -40,7 +40,8 @@ body {
 
 @include screen("mobile") {
   .heightSection {
-    height: calc(100vh - $height-header-mobile) !important;
+    min-height: calc(100vh - $height-header-mobile) !important;
+    height: auto !important;
   }
 }
 

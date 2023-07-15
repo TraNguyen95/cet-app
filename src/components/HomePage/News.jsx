@@ -1,4 +1,3 @@
-import '../../scss/components/portfolio.scss'
 import ButtonGoDown from '../Button'
 import portfolio from '../../assets/images/portfolio.png'
 import '../../scss/components/news.scss'
@@ -11,7 +10,7 @@ export function News() {
     <>
       <div className='news b flex flex-col bg-darkGray-900 heightSection'>
         <div className='wrap-text flex flex-col'>
-          <span className='mb-2 flex justify-center text-white'>Last post</span>
+          <span className='mb-2 flex justify-center text-white LastPost-text'>Last post</span>
           <span className='ourNews flex justify-center text-white'>Our News</span>
         </div>
         <div>
@@ -20,7 +19,7 @@ export function News() {
             <NewCard/>
             <NewCard/>
           </div>
-          <div className="ButtonGoDown left-0">
+          <div className="wrap-buttonCardNew">
             <div className='flex items-center'>
               <Link to='/' className='mr-3'>
                 <img src={iconRow} alt=''/>

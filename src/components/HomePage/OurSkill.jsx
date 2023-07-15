@@ -11,7 +11,7 @@ export const OurSkill = () => {
         <div className='ButtonGoDown absolute'>
           <ButtonGoDown target="Services"/>
         </div>
-        <div className='flex h-full'>
+        <div className='flex h-full wrap-skillContent'>
           <div className='ourSkill-wrap-text flex flex-col text-white justify-items-start pt-6'>
             <div className="flex flex-col">
               <span className='mb-3'>Skill</span>

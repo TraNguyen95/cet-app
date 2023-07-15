@@ -47,3 +47,22 @@
     }
   }
 }
+
+@include screen("mobile") {
+  .ourSkill {
+    padding-right: 0 !important;
+  }
+  .wrap-skillContent {
+    flex-direction: column !important;
+
+    .ourSkill-wrap-text {
+      width: 100% !important;
+      padding: 0 15px 28px 15px !important;
+
+      .text-large {
+        font-size: 30px !important;
+        line-height: 40px !important;
+      }
+    }
+  }
+}
