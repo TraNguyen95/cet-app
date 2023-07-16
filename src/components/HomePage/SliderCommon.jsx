@@ -7,7 +7,7 @@ import {CardProfile} from "src/components/HomePage/CardProfile.jsx";
 import React, {useEffect, useRef, useState} from "react";
 
 
-export function SliderCommon() {
+export function SliderCommon({data}) {
   const settings = {
     customPaging: function (i) {
       return <span className="dot w-full"></span>
@@ -35,16 +35,12 @@ export function SliderCommon() {
     <>
       <div className='slider-common h-full'>
         <Slider {...settings}>
-          <CardProfile/>
-          <CardProfile/>
-          <CardProfile/>
-          <CardProfile/>
-
-          <CardProfile/>
-
-
+          {data.map((team) => {
+            return (
+              <CardProfile key={team.id} name={team.attributes.name} jobDescription={team.attributes.jobDescription} avatar={team.attributes.avatar.data.attributes.url} />
+            )
+          })}
         </Slider>
-
       </div>
     </>
   )

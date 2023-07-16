@@ -38,7 +38,7 @@ export function Services() {
     slidesToScroll: 1,
     verticalSwiping: true,
     swipeToSlide: true,
-    infinite: false,
+    infinite: true,
     touchThreshold: 3,
   }
 
