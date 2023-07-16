@@ -28,3 +28,15 @@
 .our-news {
   background-image: unset !important;
 }
+
+.our-news .footer {
+  padding-left: 147px;
+  padding-right: 147px;
+}
+
+@media not all and (min-width: 1024px) {
+  .our-news .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

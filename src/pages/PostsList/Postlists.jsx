@@ -82,12 +82,11 @@ export default function PostsList() {
       pathname: '/posts'
     })
   }
-  console.log(data[0]?.attributes.thumpnail.data.attributes.url)
 
   const handleLoadMore = () => {
     setPage((prevPage) => prevPage + 1)
   }
-  const mainBackgroundClasses = `our-news text-wite bg-mainBackground  bg-contain bg-left-top bg-no-repeat min-h-screen`
+  const mainBackgroundClasses = `our-news text-wite bg-mainBackground  bg-contain bg-left-top bg-no-repeat min-h-screen h-[100vh]`
 
   const location = useLocation()
 
@@ -143,7 +142,7 @@ export default function PostsList() {
                     <img
                       className='h-72 w-full object-cover'
                       src={`${import.meta.env.VITE_REACT_IMAGE_BASE_URL}${
-                        post?.attributes.thumpnail.data.attributes.url
+                        post?.attributes.thumpnail?.data?.attributes.url
                       }`}
                       alt='Thumbnail'
                     />
