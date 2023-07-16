@@ -25,10 +25,6 @@
   font-weight: bold;
 }
 
-.our-news {
-  background-image: unset !important;
-}
-
 .our-news .footer {
   padding-left: 147px;
   padding-right: 147px;
@@ -40,3 +36,8 @@
     padding-right: 1rem;
   }
 }
+@media screen and (max-width: 1024px) {
+  .our-news {
+    background-image: unset !important;
+  }
+} 

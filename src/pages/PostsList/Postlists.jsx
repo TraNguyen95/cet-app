@@ -39,7 +39,7 @@ export default function PostsList() {
         pageSize: queryParams.pageSize || '3'
       },
       filters: {
-        categories: queryParams.category
+        category: queryParams.category
       }
     })
     const newData = response.data.data
@@ -109,7 +109,7 @@ export default function PostsList() {
           style={{ overflowX: 'auto' }}
         >
           <button
-            className={classNames({ 'text-blue': isCategoryActive(null), active: selectedCategory === null })}
+            className={classNames({ 'active text-blue': isCategoryActive(null) })}
             onClick={handleSearchAll}
           >
             All

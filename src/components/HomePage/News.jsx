@@ -14,7 +14,7 @@ export function News() {
           <span className='ourNews flex justify-center text-white'>Our News</span>
         </div>
         <div>
-          <div className='wap-item grid w-full grid-cols-3 gap-12 pt-8'>
+          <div className='wap-item grid w-full grid-cols-3 gap-12 pt-8 '>
             <NewCard />
             <NewCard />
             <NewCard />

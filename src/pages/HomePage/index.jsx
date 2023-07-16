@@ -20,7 +20,7 @@ import {SideBarMobile} from "src/components/HomePage/SideBarMobile.jsx";
 
 const boxVariant = {
   visible: {opacity: 1, scale: 1, transition: {duration: 0.5}},
-  hidden: {opacity: 0, scale: 0}
+  hidden: {opacity: 0.5, scale: 0.5}
 }
 
 const AnimationHome = ({num, scrollToNextSection, isActive, children}) => {
